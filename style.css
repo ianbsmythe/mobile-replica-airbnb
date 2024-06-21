@@ -13,6 +13,7 @@ body {
 
 button {
     -webkit-appearance: none;
+    appearance: none;
     border-radius: 0;
     text-align: inherit;
     background: none;
@@ -23,6 +24,8 @@ button {
     color: inherit;
     font: inherit;
 }
+
+
 
 .page {
     width: 412px;
@@ -49,6 +52,8 @@ button {
     height: 70px;
     background-color: white;
     padding: 14px 24px 0 24px;
+
+
 }
 
 .searchHeader__barShape {
@@ -99,9 +104,13 @@ button {
     height: 74px;
     width: 100%;
     display: flex;
-    overflow: auto hidden;
+    overflow: auto;
     gap: 16px;
     padding-inline: 24px;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 .iconContainer {
