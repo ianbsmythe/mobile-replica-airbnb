@@ -31,6 +31,19 @@ button {
     margin: auto;
 }
 
+.headerContainer {
+    contain: strict;
+    width: 412px;
+    height: 144px;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: 0 0 6px 0 rgba(0 0 0 / 0.1);
+    border-bottom: 0.5px solid rgba(0 0 0 / 0.08);
+    position: sticky;
+    z-index: 1;
+    
+}
+
 .searchHeader {
     width: 100%;
     height: 70px;
@@ -86,7 +99,7 @@ button {
     height: 74px;
     width: 100%;
     display: flex;
-    overflow: auto;
+    overflow: auto hidden;
     gap: 16px;
     padding-inline: 24px;
 }
