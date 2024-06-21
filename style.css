@@ -11,6 +11,19 @@ body {
     background-color: grey;
 }
 
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
+}
+
 .page {
     width: 412px;
     height: 915px;
@@ -75,13 +88,19 @@ body {
     display: flex;
     overflow: auto;
     gap: 16px;
-    align-items: center;
     padding-inline: 24px;
 }
 
 .iconContainer {
-    height: 44px;
+    height: 100%;
     display: flex;
+    align-items: center;
+    &:focus {
+        .iconImage, .iconText {
+            opacity: 1;
+        }
+        border-bottom: 3px solid black;
+    }
 }
 
 .iconBox {
@@ -90,12 +109,20 @@ body {
     align-items: center;
     justify-content: center; 
     gap: 4px;
-    opacity: 0.6742081447963801;
+    
 }
+
+.opacitySelect {
+    
+    background-color: transparent;
+    background-image: none;
+
+}
+
 .iconImage {
     height: 24px;
     width: 24px;    
-    
+    opacity: 0.6742081447963801;
 }
 
 .iconText {
@@ -105,4 +132,5 @@ body {
     line-height: 1rem;
     font-weight:600;
     text-wrap: nowrap;
+    opacity: 0.6742081447963801;
 }
