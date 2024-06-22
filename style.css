@@ -156,3 +156,13 @@ button {
     text-wrap: nowrap;
     opacity: 0.6742081447963801;
 }
+
+.propertyParentBox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin: 24px 0 32px 0;
+    border: none;
+    padding: 0 24px 0 24px
+}
