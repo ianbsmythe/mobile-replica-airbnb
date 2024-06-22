@@ -57,7 +57,7 @@ button {
     width: 100%;
     height: 80px;
     background-color: white;
-    padding: 14px 24px 12px 24px;
+    padding: 14px 24px 10px 24px;
 
 
 }
@@ -374,6 +374,40 @@ button {
 }
 
 .hostingSection {
+    display: grid;
+    row-gap: 12px;
+    background-color: #F7F7F7;
+    margin-inline: auto;
+    padding-inline: 24px;
+    padding-block: 24px;
+    border-bottom: solid 1px #DDDDDD;
+    h2 {
+        font-weight: 600;
+        color: #222222;
+        font-size: 14px;
+        line-height: 18px;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+    }
+
+    p {
+        font-weight: 400;
+        color: #222222;
+        font-size: 14px;
+        line-height: 18px;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+    
+        
+    }
+
+}
+
+.airbnbFooterSection {
     display: grid;
     row-gap: 12px;
     background-color: #F7F7F7;
