@@ -32,7 +32,6 @@ button {
 .page {
     width: 100%;
     max-width: 450px;
-    min-width: 370px;
     height: 100%;
     background-color: white;
     margin: auto;
